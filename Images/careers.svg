@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="career-grad" x1="10" y1="14" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <path d="M24 18V14C24 11.7909 25.7909 10 28 10H36C38.2091 10 40 11.7909 40 14V18" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+  <rect x="10" y="18" width="44" height="34" rx="8" fill="url(#career-grad)"/>
+  <rect x="28" y="28" width="8" height="7" rx="2" fill="#FCD34D"/>
+  <path d="M10 29C16 33 24 35 32 35C40 35 48 33 54 29" stroke="#93C5FD" stroke-width="2" stroke-opacity="0.6"/>
+</svg>
