@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="fin-grad1" x1="8" y1="12" x2="56" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="fin-gold" x1="36" y1="30" x2="56" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Card base -->
+  <rect x="8" y="15" width="48" height="34" rx="7" fill="url(#fin-grad1)"/>
+  <!-- Card magnetic stripe -->
+  <rect x="8" y="22" width="48" height="6" fill="#064E3B" fill-opacity="0.45"/>
+  <!-- Card chip -->
+  <rect x="14" y="33" width="9" height="7" rx="2" fill="#FCD34D"/>
+  <!-- Number indicator lines -->
+  <rect x="26" y="35" width="10" height="3" rx="1.5" fill="#A7F3D0" fill-opacity="0.8"/>
+  <!-- Gold coin indicator -->
+  <circle cx="46" cy="38" r="9" fill="url(#fin-gold)" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M46 33V43M43.5 35.5L46 33L48.5 35.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

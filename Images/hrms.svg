@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="hrms-grad1" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+  <!-- Stylized team / ID user avatar -->
+  <circle cx="32" cy="20" r="10" fill="url(#hrms-grad1)"/>
+  <!-- Body/Torso -->
+  <path d="M16 48C16 39.1634 23.1634 32 32 32C40.8366 32 48 39.1634 48 48C48 50.2091 46.2091 52 44 52H20C17.7909 52 16 50.2091 16 48Z" fill="url(#hrms-grad1)"/>
+  <!-- Secondary team member left -->
+  <circle cx="17" cy="23" r="6" fill="#A78BFA" fill-opacity="0.75"/>
+  <path d="M8 44C8 38 12 34 17 34C19.5 34 21.8 35 23.3 36.8C20 39.8 18 44.2 18 49H11C9.3 49 8 47.7 8 46V44Z" fill="#A78BFA" fill-opacity="0.75"/>
+  <!-- Checkmark / verification badge on bottom right -->
+  <circle cx="45" cy="43" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="2.5"/>
+  <path d="M41.5 43L44 45.5L48.5 40.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

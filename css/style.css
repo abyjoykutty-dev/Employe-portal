@@ -478,6 +478,38 @@ body {
   display: none;
 }
 
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(10, 20, 38, 0.08);
+  box-shadow: 0 1px 3px rgba(10, 20, 38, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.link-card:hover .card-icon {
+  transform: translateY(-1px) scale(1.04);
+  box-shadow: 0 4px 12px rgba(10, 20, 38, 0.08);
+  border-color: rgba(47, 91, 234, 0.2);
+}
+
+.card-icon-img,
+.card-icon img,
+#quick-access-grid .link-card img {
+  width: 26px !important;
+  height: 26px !important;
+  max-width: 26px !important;
+  max-height: 26px !important;
+  object-fit: contain !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
 .monogram {
   width: 40px;
   height: 40px;
@@ -730,9 +762,9 @@ body {
 
 .text-panel h3 {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  margin: 0 0 var(--space-3);
+  margin: 0 0 var(--space-2);
 }
 
 .text-panel p {
@@ -740,6 +772,132 @@ body {
   font-size: 14px;
   color: var(--muted);
   line-height: 1.55;
+}
+
+/* Vision & Mission Highlight */
+.vm-grid {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .vm-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.vm-card {
+  padding: var(--space-6);
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  border-top: 4px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vm-card:last-child {
+  border-top-color: var(--gold);
+}
+
+.vm-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.vm-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.vm-card:last-child .vm-tag {
+  color: var(--gold);
+}
+
+.vm-card h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Pillar cards */
+.pillar-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.pillar-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-2);
+}
+
+/* Subsection Header */
+.subsection-header {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.subsection-header h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 var(--space-1);
+}
+
+.subsection-header p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Value cards */
+.value-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.value-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(47, 91, 234, 0.08);
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+}
+
+.about-links {
+  margin-top: var(--space-6);
 }
 
 /* Connect */
@@ -762,17 +920,71 @@ body {
 }
 
 .connect-grid .glass-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: var(--space-5) var(--space-3);
+  gap: var(--space-2);
 }
 
 .connect-grid .glass-card::after {
   display: none;
 }
 
+.connect-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-1);
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.connect-grid .glass-card:hover .connect-icon {
+  transform: translateY(-2px) scale(1.06);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.connect-icon-img,
+.connect-icon img,
+.connect-grid .glass-card img {
+  width: 26px !important;
+  height: 26px !important;
+  max-width: 26px !important;
+  max-height: 26px !important;
+  object-fit: contain !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
 .connect-grid .glass-card h3 {
   font-size: 14px;
-  margin-bottom: var(--space-2);
+  margin: 0;
+  color: var(--white);
+}
+
+.connect-handle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #9aa8bc;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.connect-grid .glass-card:hover .connect-handle {
+  color: var(--gold-soft);
 }
 
 .connect-grid .glass-card .ph {

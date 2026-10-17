@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Innovature Employee Portal — start here for tools, policies, and department resources.">
+  <meta name="description"
+    content="Innovature Employee Portal — start here for tools, policies, and department resources.">
   <title>Innovature Employee Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -42,7 +47,8 @@
           <p class="hero-intro">Your daily starting point for workplace tools, policies, and team resources.</p>
           <div class="search-wrap">
             <label for="portal-search">Search tools and resources</label>
-            <input type="search" id="portal-search" class="search-input" placeholder="Search Gmail, Drive, policies, departments…" autocomplete="off">
+            <input type="search" id="portal-search" class="search-input"
+              placeholder="Search Gmail, Drive, policies, departments…" autocomplete="off">
             <p class="search-hint">Filters Quick access cards as you type</p>
           </div>
         </div>
@@ -73,53 +79,75 @@
           <p>Launch the tools you use most. Placeholder links are marked until IT publishes the final URLs.</p>
         </header>
         <div class="card-grid cols-4" id="quick-access-grid">
-          <a class="link-card" href="https://mail.google.com/" target="_blank" rel="noopener" data-search="gmail mail email google">
-            <div class="monogram" aria-hidden="true">GM</div>
+          <a class="link-card" href="https://mail.google.com/" target="_blank" rel="noopener"
+            data-search="gmail mail email google">
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/gmail.svg" alt="Gmail" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>Gmail</h3>
             <p class="purpose">Company email and conversations</p>
             <p class="host">mail.google.com</p>
           </a>
-          <a class="link-card" href="https://drive.google.com/" target="_blank" rel="noopener" data-search="google drive files documents">
-            <div class="monogram" aria-hidden="true">GD</div>
+          <a class="link-card" href="https://drive.google.com/" target="_blank" rel="noopener"
+            data-search="google drive files documents">
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/google-drive.svg" alt="Google Drive" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>Google Drive</h3>
             <p class="purpose">Shared files and team folders</p>
             <p class="host">drive.google.com</p>
           </a>
-          <a class="link-card" href="https://calendar.google.com/" target="_blank" rel="noopener" data-search="calendar meetings schedule">
-            <div class="monogram" aria-hidden="true">GC</div>
+          <a class="link-card" href="https://calendar.google.com/" target="_blank" rel="noopener"
+            data-search="calendar meetings schedule">
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/google-calendar.svg" alt="Google Calendar" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>Google Calendar</h3>
             <p class="purpose">Meetings, rooms, and availability</p>
             <p class="host">calendar.google.com</p>
           </a>
-          <a class="link-card" href="https://meet.google.com/" target="_blank" rel="noopener" data-search="meet video calls">
-            <div class="monogram" aria-hidden="true">MT</div>
+          <a class="link-card" href="https://meet.google.com/" target="_blank" rel="noopener"
+            data-search="meet video calls">
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/google-meet.svg" alt="Google Meet" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>Google Meet</h3>
             <p class="purpose">Video meetings and huddles</p>
             <p class="host">meet.google.com</p>
           </a>
-          <a class="link-card" href="https://contacts.google.com/directory" target="_blank" rel="noopener" data-search="directory employee contacts people">
-            <div class="monogram" aria-hidden="true">ED</div>
+          <a class="link-card" href="https://contacts.google.com/directory" target="_blank" rel="noopener"
+            data-search="directory employee contacts people">
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/google-contacts.svg" alt="Employee Directory" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>Employee Directory</h3>
             <p class="purpose">Find colleagues and org details</p>
             <p class="host">contacts.google.com/directory</p>
           </a>
-          <a class="link-card" href="#" data-search="hrms hr human resources">
-            <div class="monogram" aria-hidden="true">HR</div>
+          <a class="link-card" href="https://innovature.hrstop.com/" data-search="hrms hr human resources">
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/hrms.svg" alt="HRMS" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>HRMS</h3>
             <p class="purpose">Leave, payroll, and HR requests</p>
-            <p class="host ph-host"><span class="ph">[HRMS URL]</span></p>
+            <p class="host"><span class="ph">HRMS</span></p>
           </a>
           <a class="link-card" href="#" data-search="finance expenses budget">
-            <div class="monogram" aria-hidden="true">FN</div>
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/finance.svg" alt="Finance Portal" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>Finance Portal</h3>
             <p class="purpose">Expenses, approvals, and reports</p>
             <p class="host ph-host"><span class="ph">[Finance Portal URL]</span></p>
           </a>
-          <a class="link-card" href="#" data-search="it ticketing support helpdesk">
-            <div class="monogram" aria-hidden="true">IT</div>
+          <a class="link-card" href="http://ticketing.innovaturelabs.intra/"
+            data-search="it ticketing support helpdesk">
+            <div class="card-icon" aria-hidden="true">
+              <img src="Images/it-ticketing.svg" alt="IT Ticketing" class="card-icon-img" width="26" height="26">
+            </div>
             <h3>IT Ticketing</h3>
             <p class="purpose">Report issues and request access</p>
-            <p class="host ph-host"><span class="ph">[Ticketing system URL]</span></p>
+            <p class="host"><span class="ph">ticketing.innovaturelabs.intra</span></p>
           </a>
         </div>
         <p class="no-results" id="search-empty" role="status">No quick access items match your search.</p>
@@ -236,23 +264,66 @@
       <div class="container">
         <header class="section-header">
           <h2 id="about-heading">About Innovature</h2>
-          <p>Internal reference copy will be added by Internal Communication when approved.</p>
+          <p>Our guiding vision, mission, delivery pillars, and core values that drive our culture.</p>
         </header>
-        <div class="about-panels">
-          <article class="text-panel">
-            <h3>Company overview</h3>
-            <p><span class="ph">[Company overview placeholder]</span></p>
+
+        <!-- Vision & Mission -->
+        <div class="vm-grid">
+          <article class="vm-card">
+            <span class="vm-tag">Vision</span>
+            <h3>Create a better future through innovative digital transformation.</h3>
           </article>
-          <article class="text-panel">
-            <h3>Our vision</h3>
-            <p><span class="ph">[Vision placeholder]</span></p>
-          </article>
-          <article class="text-panel">
-            <h3>Our mission</h3>
-            <p><span class="ph">[Mission placeholder]</span></p>
+          <article class="vm-card">
+            <span class="vm-tag">Mission</span>
+            <h3>Consistently deliver innovative and high-quality digital solutions that elicit customer delight.</h3>
           </article>
         </div>
-        <div class="card-grid cols-3">
+
+        <!-- Expertise, Execution, Excellence -->
+        <div class="about-panels">
+          <article class="text-panel pillar-card">
+            <div class="pillar-label">01 / PILLAR</div>
+            <h3>Expertise</h3>
+            <p>Our team comprises passionate tech experts with extensive experience and knowledge across various domains. We specialize in providing tailored tech solutions for businesses spanning diverse industries such as healthcare, finance, retail, manufacturing, and more.</p>
+          </article>
+          <article class="text-panel pillar-card">
+            <div class="pillar-label">02 / PILLAR</div>
+            <h3>Execution</h3>
+            <p>At Innovature, we pride ourselves on our commitment to delivering excellence in every project we undertake. From initial consultation to final delivery, our focus remains on meticulous planning, seamless execution, and meeting or exceeding client expectations.</p>
+          </article>
+          <article class="text-panel pillar-card">
+            <div class="pillar-label">03 / PILLAR</div>
+            <h3>Excellence</h3>
+            <p>Elevating excellence, we continually refine expertise, staying updated on the latest tech and industry trends. Our ISO 27001 certification ensures top-tier data security across processes, driving continuous improvement for unmatched quality and innovative solutions.</p>
+          </article>
+        </div>
+
+        <!-- Core Values -->
+        <div class="values-section">
+          <div class="subsection-header">
+            <h3>Our Core Values</h3>
+            <p>The foundational principles guiding how we collaborate, innovate, and serve.</p>
+          </div>
+          <div class="about-panels">
+            <article class="text-panel value-card">
+              <span class="value-badge">Commitment</span>
+              <h3>Customer Commitment</h3>
+              <p>We aim to enhance customer experiences by delivering top-notch services without compromising excellence. Our close collaboration ensures tailored solutions that drive their growth.</p>
+            </article>
+            <article class="text-panel value-card">
+              <span class="value-badge">Collaboration</span>
+              <h3>Teamwork</h3>
+              <p>Our success hinges on our people and the power of effective teamwork. Our unwavering dedication to fostering high-performance teams drives our achievement of critical goals.</p>
+            </article>
+            <article class="text-panel value-card">
+              <span class="value-badge">Impact</span>
+              <h3>Care For Community &amp; Society</h3>
+              <p>We are deeply committed to positively impacting the communities we operate in, expressing gratitude to those who have supported us in our triumphs.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="card-grid cols-3 about-links">
           <a class="link-card" href="#">
             <h3>Research Committee (RC)</h3>
             <p class="purpose">Innovation initiatives and technical exploration</p>
@@ -279,30 +350,46 @@
           <p>Official channels for news, culture, and public-facing updates.</p>
         </header>
         <div class="connect-grid">
-          <a class="glass-card" href="#" target="_blank" rel="noopener">
+          <a class="glass-card" href="https://innovature.ai/" target="_blank" rel="noopener">
+            <div class="connect-icon" aria-hidden="true">
+              <img src="Images/website.svg" alt="Official website" class="connect-icon-img" width="26" height="26">
+            </div>
             <h3>Official website</h3>
-            <span class="ph">[URL]</span>
+            <span class="connect-handle">innovature.ai</span>
           </a>
-          <a class="glass-card" href="#" target="_blank" rel="noopener">
+          <a class="glass-card" href="https://www.linkedin.com/company/innovature/" target="_blank" rel="noopener">
+            <div class="connect-icon" aria-hidden="true">
+              <img src="Images/linkedin.svg" alt="LinkedIn" class="connect-icon-img" width="26" height="26">
+            </div>
             <h3>LinkedIn</h3>
-            <span class="ph">[URL]</span>
+            <span class="connect-handle">/company/innovature</span>
           </a>
-          <a class="glass-card" href="#" target="_blank" rel="noopener">
-            <h3>YouTube</h3>
-            <span class="ph">[URL]</span>
+          <a class="glass-card" href="https://www.facebook.com/innovature/" target="_blank" rel="noopener">
+            <div class="connect-icon" aria-hidden="true">
+              <img src="Images/facebook.svg" alt="Facebook" class="connect-icon-img" width="26" height="26">
+            </div>
+            <h3>Facebook</h3>
+            <span class="connect-handle">/innovature</span>
           </a>
-          <a class="glass-card" href="#" target="_blank" rel="noopener">
+          <a class="glass-card" href="https://www.instagram.com/innovaturelabs/" target="_blank" rel="noopener">
+            <div class="connect-icon" aria-hidden="true">
+              <img src="Images/instagram.svg" alt="Instagram" class="connect-icon-img" width="26" height="26">
+            </div>
             <h3>Instagram</h3>
-            <span class="ph">[URL]</span>
+            <span class="connect-handle">@innovaturelabs</span>
           </a>
-          <a class="glass-card" href="#" target="_blank" rel="noopener">
+          <a class="glass-card" href="https://x.com/Innovature_ai" target="_blank" rel="noopener">
+            <div class="connect-icon" aria-hidden="true">
+              <img src="Images/x-twitter.svg" alt="X (Twitter)" class="connect-icon-img" width="26" height="26">
+            </div>
             <h3>X (Twitter)</h3>
-            <span class="ph">[URL]</span>
+            <span class="connect-handle">@Innovature_ai</span>
           </a>
         </div>
         <p class="footer-line">
           Innovature Employee Portal. Maintained by IT and Infrastructure.
-          <a href="#">IT Ticketing</a> (<span class="ph">[Ticketing system URL]</span>)
+          <a href="http://ticketing.innovaturelabs.intra/">IT Ticketing</a> (<span class="ph">[Ticketing system
+            URL]</span>)
         </p>
       </div>
     </section>
@@ -310,4 +397,5 @@
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
